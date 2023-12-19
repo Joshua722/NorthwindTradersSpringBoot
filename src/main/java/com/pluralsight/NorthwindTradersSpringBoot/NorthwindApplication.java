@@ -1,5 +1,6 @@
 package com.pluralsight.NorthwindTradersSpringBoot;
 
+import com.pluralsight.NorthwindTradersSpringBoot.DAO.SimpleProductDAO;
 import com.pluralsight.NorthwindTradersSpringBoot.Model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Scanner;
 
-@SpringBootApplication
+@Component
 public class NorthwindApplication implements CommandLineRunner {
     @Autowired
     private SimpleProductDAO simpleProductDAO;

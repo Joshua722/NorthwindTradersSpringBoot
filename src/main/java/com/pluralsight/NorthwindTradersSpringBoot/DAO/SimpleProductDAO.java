@@ -1,4 +1,4 @@
-package com.pluralsight.NorthwindTradersSpringBoot;
+package com.pluralsight.NorthwindTradersSpringBoot.DAO;
 
 import com.pluralsight.NorthwindTradersSpringBoot.Model.Product;
 import org.springframework.stereotype.Component;
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class SimpleProductDAO implements ProductDAO{
+public class SimpleProductDAO implements ProductDAO {
 private List<Product> products = new ArrayList<>();
 
     public SimpleProductDAO(List<Product> products) {
